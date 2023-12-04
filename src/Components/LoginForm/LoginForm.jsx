@@ -3,7 +3,7 @@ import { HeaderContainer } from "../Header/Styled.Header";
 import {
   LoginContainer,
   LoginImage,
-  LoginForm,
+  LoginForms,
   Form,
   Input,
   Button,
@@ -12,9 +12,17 @@ import {
   ForgotPassword,
   SignUpLink,
   SignUp,
-} from "./Styled.Login";
+  StyledLink,
+} from "./Styled.LoginForm";
+import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const LoginForm = () => {
+  const navigate = useNavigate(); // Ініціалізуємо useNavigate
+
+  const handleClickBack = () => {
+    console.log("Click handleClickLog");
+    navigate("/");
+  };
   const handleClickSingUp = (e) => {
     e.preventDefault();
     console.log("click on handleClickSingUp");
@@ -22,10 +30,12 @@ const Login = () => {
 
   return (
     <>
-      <HeaderContainer />
+      <HeaderContainer>
+        <StyledLink onClick={handleClickBack}>Back</StyledLink>
+      </HeaderContainer>
       <LoginContainer>
         <LoginImage />
-        <LoginForm>
+        <LoginForms>
           <Form>
             <HeroLogin>Login</HeroLogin>
             <Label thmlFor="email">Email</Label>
@@ -40,10 +50,10 @@ const Login = () => {
               Don’t have account? <SignUp>Sign Up</SignUp>
             </SignUpLink>
           </Form>
-        </LoginForm>
+        </LoginForms>
       </LoginContainer>
     </>
   );
 };
 
-export default Login;
+export default LoginForm;

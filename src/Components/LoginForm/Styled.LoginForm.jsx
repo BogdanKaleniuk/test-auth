@@ -9,6 +9,26 @@ export const LoginContainer = styled.div`
   width: 100%;
 `;
 
+export const StyledLink = styled.button`
+  margin-top: 18px;
+  margin-left: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 11px 0px;
+  width: 160px;
+  z-index: 3;
+  font-family: Merriweather;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.38;
+\
+
+  background-color: #b29f7e; /* Стилі для другої кнопки */
+  color: #ffffff;
+  border: none;
+`;
+
 export const LoginImage = styled.div`
   width: 60%;
   height: 100vh; /* Якщо ви хочете, щоб фон був по всій висоті екрану */
@@ -26,7 +46,7 @@ export const HeroLogin = styled.h2`
   line-height: 1.21; /* 121.429% */
 `;
 
-export const LoginForm = styled.div`
+export const LoginForms = styled.div`
   width: 40%;
   background-color: white;
   display: flex;

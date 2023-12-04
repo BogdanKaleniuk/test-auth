@@ -7,6 +7,7 @@ import {
   Button,
 } from "./Styled.Main";
 import Header from "../Header/Header";
+import Deals from "../Deals/Deals";
 
 const Main = () => {
   const buttonMain = () => {
@@ -14,21 +15,24 @@ const Main = () => {
   };
 
   return (
-    <MainContainer>
-      <Header />
-      <OverlayContent>
-        <div>
-          <HeroText>The chemical negatively charged</HeroText>
-          <Text>
-            Numerous calculations predict, and experiments confirm, that the
-            force field reflects the beam, while the mass defect is not formed.
-            The chemical compound is negatively charged. Twhile the mass defect
-            is
-          </Text>
-        </div>
-        <Button onClick={buttonMain}>Get Started</Button>
-      </OverlayContent>
-    </MainContainer>
+    <>
+      <MainContainer>
+        <Header />
+        <OverlayContent>
+          <div>
+            <HeroText>The chemical negatively charged</HeroText>
+            <Text>
+              Numerous calculations predict, and experiments confirm, that the
+              force field reflects the beam, while the mass defect is not
+              formed. The chemical compound is negatively charged. Twhile the
+              mass defect is
+            </Text>
+          </div>
+          <Button onClick={buttonMain}>Get Started</Button>
+        </OverlayContent>
+      </MainContainer>
+      <Deals />
+    </>
   );
 };
 

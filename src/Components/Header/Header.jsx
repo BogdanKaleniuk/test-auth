@@ -1,13 +1,18 @@
 import React from "react";
 import { Button, HeaderContainer } from "./Styled.Header";
+import { useNavigate } from "react-router-dom"; // Імпортуємо useNavigate
 
 const Header = () => {
+  const navigate = useNavigate(); // Ініціалізуємо useNavigate
+
   const handleClickLog = () => {
     console.log("Click handleClickLog");
+    navigate("/login");
   };
 
   const handleClickSign = () => {
     console.log("Click handleClickSign");
+    navigate("/login");
   };
 
   return (
