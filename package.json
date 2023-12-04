@@ -13,6 +13,7 @@
     "styled-components": "^6.1.1",
     "web-vitals": "^2.1.0"
   },
+  
   "homepage": "https://bogdankaleniuk.github.io/test-auth/",
   "scripts": {
     "start": "react-scripts start",
