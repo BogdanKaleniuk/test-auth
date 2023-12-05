@@ -7,7 +7,7 @@ import { Container } from "./Styled.App";
 
 function App() {
   return (
-    <Router basename="/">
+    <Router>
       <Container>
         <Routes>
           <Route path="/login" element={<LoginForm />} />
