@@ -11,7 +11,7 @@ function App() {
       <Container>
         <Routes>
           <Route path="/login" element={<LoginForm />} />
-          <Route exact path="/" element={<Main />} />
+          <Route exact path="/test-auth" element={<Main />} />
         </Routes>
       </Container>
     </Router>
