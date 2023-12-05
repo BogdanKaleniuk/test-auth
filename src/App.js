@@ -7,11 +7,11 @@ import { Container } from "./Styled.App";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Container>
         <Routes>
           <Route path="/login" element={<LoginForm />} />
-          <Route exact path="/test-auth" element={<Main />} />
+          <Route exact path="/" element={<Main />} />
         </Routes>
       </Container>
     </Router>
